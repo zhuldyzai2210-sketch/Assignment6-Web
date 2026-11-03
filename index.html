@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 6 | jQuery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f7e9fa, #e9e6ff);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 650px;
+      padding: 50px 35px;
+      text-align: center;
+      background: white;
+      border-radius: 22px;
+      box-shadow: 0 15px 45px rgba(70, 40, 100, 0.12);
+    }
+
+    h1 {
+      color: #553080;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #777;
+      margin-bottom: 35px;
+    }
+
+    .tasks {
+      display: flex;
+      gap: 20px;
+    }
+
+    .task {
+      flex: 1;
+      padding: 30px 15px;
+      background: #f5efff;
+      border: 2px solid #e3d5fa;
+      border-radius: 15px;
+      text-decoration: none;
+      color: #553080;
+      transition: 0.25s;
+    }
+
+    .task:hover {
+      background: #7950b5;
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    .task h2 {
+      font-size: 23px;
+      margin: 0 0 12px;
+    }
+
+    .task span {
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 35px;
+      color: #999;
+      font-size: 13px;
+    }
+
+    @media (max-width: 550px) {
+      .tasks {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Assignment 6</h1>
+    <p>jQuery Selectors, Effects & Animations</p>
+
+    <div class="tasks">
+      <a href="task1.html" class="task">
+        <h2>Task 1</h2>
+        <span>Selector Detective - 20 Cases</span>
+      </a>
+
+      <a href="task2.html" class="task">
+        <h2>Task 2</h2>
+        <span>Effects & Animations</span>
+      </a>
+    </div>
+
+    <footer>
+      Zhuldyzay Galymzhankyzy | IT-2512
+    </footer>
+  </div>
+
+</body>
+</html>
