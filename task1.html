@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 — Selector Detective</title>
+  <link rel="stylesheet" href="task1.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="task1.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="house-wrap">
+      <div class="chimney"></div>
+
+      <div class="roof">
+        <div class="attic-window"></div>
+        <div class="party-sign">The Party, 19:30 – 22:30</div>
+      </div>
+
+      <div class="house">
+        <div class="floor-label">FLOOR 2</div>
+
+        <section id="balcony" class="room balcony" data-floor="2">
+          <h2>Balcony</h2>
+          <div class="guests"></div>
+          <div class="railing"></div>
+        </section>
+
+        <section id="hall" class="room hall" data-floor="2">
+          <h2>Hall</h2>
+          <div class="guests"></div>
+        </section>
+
+        <div class="floor-label">FLOOR 1</div>
+
+        <section id="kitchen" class="room kitchen" data-floor="1">
+          <h2>Kitchen</h2>
+          <div class="guests"></div>
+        </section>
+
+        <section id="living" class="room living" data-floor="1">
+          <h2>Living room</h2>
+          <div class="guests"></div>
+        </section>
+      </div>
+
+      <div class="grass"></div>
+
+      
+<div class="legend">
+  <span class="color-legend">
+    <i class="dot red"></i>
+    <i class="dot blue"></i>
+    <i class="dot green"></i>
+    <i class="dot black"></i>
+    <i class="dot yellow"></i>
+    <i class="dot purple"></i>
+    Clothing color
+  </span>
+
+  <span class="legend-icon" data-icon="phone">Phone</span>
+  <span class="legend-icon" data-icon="glasses">Glasses</span>
+  <span class="legend-icon" data-icon="bag">Bag</span>
+  <span class="legend-icon" data-icon="cup">Cup</span>
+  <span class="legend-icon" data-icon="crumbs">Cake crumbs</span>
+  <span>◷ Arrival time</span>
+  <span><b class="legend-aitu">A</b> AITU student</span>
+</div>
+
+
+    <section class="detective">
+      <h1>Task 1. Selector Detective</h1>
+      <p>Click a case to find guests using jQuery.</p>
+
+      <div id="case-buttons"></div>
+
+      <button id="clear-btn">Clear / Reset Party</button>
+
+      <div id="result">Choose a case to start.</div>
+
+      <div class="code-output">
+        <strong>jQuery chain:</strong>
+        <code id="chain">Select a case...</code>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
